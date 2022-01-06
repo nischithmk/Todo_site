@@ -12,6 +12,7 @@ from django.contrib.auth.decorators import login_required
 from django.http import HttpResponseRedirect,HttpResponse
 from django.contrib.auth import authenticate,login,logout
 
+import collections
 def index(request):
     todo_list = Todo.objects.order_by('-id')
 
